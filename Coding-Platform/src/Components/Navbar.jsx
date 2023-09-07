@@ -55,10 +55,11 @@ const Navbar = () => {
   )
 }
 
-const items = document.querySelectorAll('.list--item');
+setTimeout(() => {
 
+const items = document.querySelectorAll('.list--item');
 function handleClick(e) {
-  e.preventDefault();
+  // e.preventDefault();
   const { textContent: textMain } = this.querySelector('a');
 
   const { textContent: textTarget } = e.target;
@@ -93,7 +94,7 @@ function handleEnter() {
   dropdownBackground.style.top = `${top}px`;
   dropdownBackground.style.left = `${left - 145}px`;
   console.log(items);
-  items.style.color = '#32373d'
+  // items.style.color = '#32373d'
 }
 
 function handleExit() {
@@ -105,5 +106,6 @@ function handleExit() {
 
 items.forEach(item => item.addEventListener('mouseenter', handleEnter));
 items.forEach(item => item.addEventListener('mouseleave', handleExit));
+}, 1);
 
-export default Navbar
+export default Navbar;
