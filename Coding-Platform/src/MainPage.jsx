@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import CodeAnimation from "./assets/animation_lm7xbaag.json"
+import CodeAnimation from "./assets/CodingAnimation.json"
 import './App.css'
 import Navbar from './Components/Navbar.jsx'
 import { useRef } from "react";
@@ -21,24 +21,12 @@ const MainPage = () => {
       </div>
       <div className="Lottie-Animation" >
         <Lottie
-
-          
-          
-          onLoopComplete={() => {
-            // console.log('End');
-            // CodeRef.current?.setDirection(-1);
-
-            console.log('start');
-            CodeRef.current.setDirection(-1);
-            CodeRef.current.setSpeed(-1)
-            CodeRef.current.play()
-            console.log('end');
-            CodeRef.current.setSpeed(1)
-            CodeRef.current.play()
-          }}
-
           lottieRef={CodeRef}
           animationData={CodeAnimation}
+          onDOMLoaded={() => {
+            console.log("speed");
+            CodeRef.current.setSpeed(.5)
+          }}
           // loop={false}
           // aria-aria-labelledby="use lottie animation"
         />
