@@ -1,5 +1,6 @@
 import Lottie from "lottie-react";
 import CodeAnimation from "./assets/CodingAnimation.json"
+import PersonCodingAnimation from "./assets/PersonCoding.json"
 import './App.css'
 import Navbar from './Components/Navbar.jsx'
 import { useRef } from "react";
@@ -18,20 +19,22 @@ const MainPage = () => {
       <div className="Header-Content">
         <div className='Hero-Page-Header'>Stack Overdose</div>
         <div className="Hero-Page-SubHeader">StackOverdose is the best platform to help you enhance your skills, expand your knowledge and fall in love with coding.</div>
+        <button type="button" className="Hero-Page-Button">Start now <span></span></button>
       </div>
       <div className="Lottie-Animation" >
         <Lottie
           lottieRef={CodeRef}
           animationData={CodeAnimation}
           onDOMLoaded={() => {
-            console.log("speed");
             CodeRef.current.setSpeed(.5)
           }}
           // loop={false}
           // aria-aria-labelledby="use lottie animation"
         />
       </div>
-      
+      <div className="Lottie-Animation-PersonCoding" >
+          <Lottie animationData={PersonCodingAnimation} />
+      </div>
     </>
   );
 }

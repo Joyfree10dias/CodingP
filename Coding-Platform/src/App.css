@@ -183,7 +183,22 @@ li.list--item a{
   position: absolute;
   width: 800px;
   height: 800px;
-  top:0%;
+  top:-5%;
   right: -10%;
   z-index: -1;
+}
+
+.Lottie-Animation-PersonCoding{
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: 20%;
+  right: 20%;
+  z-index: -1;
+}
+
+.Header-Content .Hero-Page-Button{
+  width: 110px;
+  margin-top: 20px;
+  border-radius: 1rem;
 }
