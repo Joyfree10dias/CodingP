@@ -5,7 +5,8 @@ import './App.css'
 import Navbar from './Components/Navbar.jsx'
 import { useRef } from "react";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import Trophy from "./assets/Hero-page/Trophy.png"
+import GroupIcon from '@mui/icons-material/Group';
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 
 const MainPage = () => {
 
@@ -62,10 +63,23 @@ const MainPage = () => {
 				<div className="SubLink"><a href="#">View Questions <ArrowRightAltIcon /></a></div>
 			</div>
 			<div className="Pic-Container">
-				<div className="Pic-Background-1">
-					<div className="Pic"></div>
+				<div style={{display:'flex',}}> 
+					<div className="Pic-Background-1">
+						<div className="Pic"></div>
+					</div>
+					<div className="Pic-Background-2">
+						<GroupIcon sx={{fontSize:120}} />
+					</div>
 				</div>
-				<div className="Pic-Background"></div>
+				<div className="Pic-Background-3">
+					<QuestionMarkIcon sx={{fontSize:120}} />
+				</div>
+			</div>
+		</div>
+		<div id="content-developer">
+			<div className="Developer-Header">
+				<div className="Dev-Logo"></div>
+				<div className="Header">Developer</div>
 			</div>
 		</div>
     </>
