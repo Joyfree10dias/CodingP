@@ -1,12 +1,16 @@
 import Lottie from "lottie-react";
 import CodeAnimation from "./assets/Hero-page/CodingAnimation.json"
 import PersonCodingAnimation from "./assets/Hero-page//PersonCoding.json"
+import DeveloperAnimation from "./assets/Hero-page/DeveloperAnimation.json"
 import './App.css'
 import Navbar from './Components/Navbar.jsx'
 import { useRef } from "react";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import GroupIcon from '@mui/icons-material/Group';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
+
+// Test 
+import Trophy from "./assets/Hero-page/Trophy.png"
 
 const MainPage = () => {
 
@@ -78,8 +82,25 @@ const MainPage = () => {
 		</div>
 		<div id="content-developer">
 			<div className="Developer-Header">
-				<div className="Dev-Logo"></div>
+				<div className="Dev-Logo">
+					<Lottie animationData={DeveloperAnimation} />
+				</div>
 				<div className="Header">Developer</div>
+				<div className="HeaderText">We now support 4 popular coding languages. At our core, StackOverdose is about developers.<br /> Our powerful development tools help you test, debug.</div>
+			</div>
+			<div className="Language-Logos">
+				<div className="Logo BG-1">
+					<div className="Pic-1"></div>
+				</div>
+				<div className="Logo BG-2">
+					<div className="Pic-2"></div>
+				</div>
+				<div className="Logo BG-3">
+					<div className="Pic-3"></div>
+				</div>
+				<div className="Logo BG-4">
+					<div className="Pic-4"></div>
+				</div>
 			</div>
 		</div>
     </>
